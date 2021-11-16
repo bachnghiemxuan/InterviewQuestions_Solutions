@@ -1,6 +1,6 @@
 DROP TABLE all_products;
 DROP TABLE orders;
---CREATE TABLE
+--CREATE TABLE--------------
 
 CREATE TABLE all_products(
 	product_id	INT,
@@ -13,7 +13,7 @@ CREATE TABLE orders(
 	no_units INT,
 	region VARCHAR(100)
 )
---INSERT VALUE
+--INSERT VALUE-------------------
 INSERT INTO all_products
 VALUES
 	(1, 'banh1', 1),
@@ -65,11 +65,7 @@ VALUES
 	('2017-08-21', 7, 17, 'B'),
 	('2017-09-21', 6, 26, 'C');
 
-SELECT * 
-FROM orders
-SELECT * 
-FROM all_products
---SOLUTION
+--SOLUTION--------------------
 
 WITH CTE as(
 SELECT  region,
